@@ -9,7 +9,6 @@ dependencies:
  - cloudpickle #extended support for serializing for Python objects
  - cmocean #more perceptually-uniform colorbars
  - cython #Python - C interface
- - cupy # GPU-based computation with numpy
  - dask #distributed (larger than memory) dataset handling
  - dask-labextension #dask dashboard extension for Jupyter
  - descartes #add geometric patch support to matplotlib
@@ -40,11 +39,7 @@ dependencies:
  - openh264 #H.264 codec support
  - pandas #time-series analysis
  - pip #python package manager
- # plotly versions greater than 4 included plotly_express
- - plotly=4 #high-level plotting interface
  - progress #progress bars
- - pynio #NCL-based IO
- - pyngl #NCL-based graphics
  - pyshp #shapefile handling
  - pytest #python package tester
  - pywavelets #wavelet transforms
@@ -62,8 +57,6 @@ dependencies:
  - tk #tensorkit, deep learning
  - tqdm #fancy progress bars for command line
  - widgetsnbextension #with ipywidgets, for Jupyter widgets
- - windspharm #Helmholtz decomposition for wind field, wind vector math (vorticity, div)
- - wrf-python #processing WRF output
  - x264 #video codec
  - xarray #high-level gridded data handling/analysis/processing, supports NETCDF/GRIB and more
  - xesmf #utilities for regridding
@@ -71,3 +64,6 @@ dependencies:
  - pip: #pip dependencies
    - fastkde #fast Kernel Density Estimation
    - gitsummary # makes it simple to print git repo info in a notebook or script
+   - cdsapi
+   - jupyterlab
+   - notebook
